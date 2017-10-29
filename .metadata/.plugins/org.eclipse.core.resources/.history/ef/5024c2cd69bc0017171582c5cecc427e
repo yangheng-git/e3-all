@@ -1,0 +1,16 @@
+package cn.e3mall.common.pojo;
+
+import java.io.Serializable;
+
+public class Params implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8577732643312917682L;
+	
+	String idString;
+	String status;
+	
+
+}
