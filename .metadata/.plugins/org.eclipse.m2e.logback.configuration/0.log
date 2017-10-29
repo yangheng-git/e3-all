@@ -7071,3 +7071,174 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2017-10-29 20:49:14,637 [Worker-81] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
 2017-10-29 20:49:14,637 [Worker-81] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
 2017-10-29 20:49:14,666 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:50:52,320 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface
+2017-10-29 20:50:52,320 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:51:03,317 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content
+2017-10-29 20:51:03,317 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:51:09,705 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-service
+2017-10-29 20:51:09,705 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:51:23,790 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface
+2017-10-29 20:51:23,790 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:51:36,619 [Worker-87] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:51:39,337 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:51:39,340 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:51:39,342 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:51:39,342 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:51:39,342 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
+2017-10-29 20:51:39,342 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
+2017-10-29 20:51:39,347 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:51:45,402 [Worker-93] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:51:45,862 [Worker-85] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:51:46,179 [Worker-85] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:51:47,005 [Worker-85] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:51:47,936 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:51:47,939 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:51:47,941 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:51:47,941 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:51:47,941 [Worker-85] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
+2017-10-29 20:51:47,942 [Worker-85] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
+2017-10-29 20:51:47,945 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:51:49,554 [Worker-86] ERROR o.e.m.c.u.i.actions.OpenPomAction - Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616) [org.eclipse.m2e.editor.xml_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2017-10-29 20:52:08,192 [Worker-86] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface
+2017-10-29 20:52:08,193 [Worker-86] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:52:41,673 [main] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:52:42,469 [main] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:53:59,719 [Worker-87] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-10-29 20:54:00,443 [Worker-87] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:54:00,769 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:54:01,690 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:54:02,783 [Worker-87] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /e3-content-service/src/main/java
+2017-10-29 20:54:02,784 [Worker-87] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /e3-content-service/src/main/resources
+2017-10-29 20:54:02,784 [Worker-87] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /e3-content-service/src/test/java
+2017-10-29 20:54:02,784 [Worker-87] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /e3-content-service/src/test/resources
+2017-10-29 20:54:03,830 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:54:04,087 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for e3-content-service
+2017-10-29 20:54:04,096 [Worker-87] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-10-29 20:54:04,683 [Worker-90] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:54:05,418 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:54:05,418 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:54:05,422 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:54:05,422 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:54:05,422 [Worker-90] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
+2017-10-29 20:54:05,422 [Worker-90] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
+2017-10-29 20:54:05,428 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:54:09,663 [Worker-85] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-parent
+2017-10-29 20:54:09,663 [Worker-85] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:54:16,564 [Worker-91] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content
+2017-10-29 20:54:16,564 [Worker-91] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:54:30,678 [Worker-85] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface
+2017-10-29 20:54:30,678 [Worker-85] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:54:43,204 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-service
+2017-10-29 20:54:43,204 [Worker-92] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:57:47,443 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface
+2017-10-29 20:57:47,443 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:57:53,607 [Worker-90] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-service
+2017-10-29 20:57:53,607 [Worker-90] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:58:10,139 [Worker-90] ERROR o.e.m.c.u.i.actions.OpenPomAction - Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616) [org.eclipse.m2e.editor.xml_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2017-10-29 20:58:19,875 [Worker-93] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:58:21,352 [Worker-93] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
+2017-10-29 20:58:21,353 [Worker-93] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
+2017-10-29 20:58:30,177 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:58:30,669 [Worker-87] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:58:30,961 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:58:31,826 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:58:32,777 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:32,780 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:58:32,783 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:32,783 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:58:32,784 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
+2017-10-29 20:58:32,784 [Worker-87] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
+2017-10-29 20:58:32,788 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:48,481 [Worker-89] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface\pom.xml.
+2017-10-29 20:58:48,791 [Worker-89] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:58:48,873 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:58:49,708 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:58:51,456 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:51,459 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:58:51,461 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:51,462 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:58:52,018 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-10-29 20:58:52,202 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:52,202 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:58:52,205 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:58:52,205 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:26,928 [Worker-94] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-interface:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface\pom.xml.
+2017-10-29 20:59:27,251 [Worker-94] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 20:59:29,678 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:29,682 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:29,684 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:29,685 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:30,584 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:30,584 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:30,585 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:30,586 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:31,171 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:31,172 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:31,173 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:31,173 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:53,294 [Worker-91] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface
+2017-10-29 20:59:53,294 [Worker-91] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 20:59:55,499 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:55,500 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 20:59:55,501 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 20:59:55,501 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:20,136 [Worker-93] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-10-29 21:00:20,803 [Worker-93] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-interface:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-interface\pom.xml.
+2017-10-29 21:00:21,117 [Worker-93] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /e3-content-interface/src/main/java
+2017-10-29 21:00:21,117 [Worker-93] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /e3-content-interface/src/main/resources
+2017-10-29 21:00:21,118 [Worker-93] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /e3-content-interface/src/test/java
+2017-10-29 21:00:21,118 [Worker-93] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /e3-content-interface/src/test/resources
+2017-10-29 21:00:21,336 [Worker-93] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-10-29 21:00:21,806 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:21,806 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:21,807 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:21,808 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:34,103 [Worker-72] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\apache-workspaces-Eclipse-taotao2016\e3-content-service
+2017-10-29 21:00:34,103 [Worker-72] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s E:\apache-maven-3.5.0\conf\settings.xml install
+2017-10-29 21:00:38,121 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:38,122 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:38,127 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:38,128 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:38,143 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:38,143 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:38,145 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:38,145 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:45,845 [Worker-72] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-10-29 21:00:45,968 [Worker-72] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: cn.e3mall:e3-content-service:0.0.1-SNAPSHOT @ E:\apache-workspaces-Eclipse-taotao2016\e3-content-service\pom.xml.
+2017-10-29 21:00:47,866 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /e3-content-service/src/main/java
+2017-10-29 21:00:47,866 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /e3-content-service/src/main/resources
+2017-10-29 21:00:47,866 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /e3-content-service/src/test/java
+2017-10-29 21:00:47,866 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /e3-content-service/src/test/resources
+2017-10-29 21:00:49,035 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for e3-content-service
+2017-10-29 21:00:49,044 [Worker-72] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2017-10-29 21:00:49,759 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:49,760 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:49,762 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-29 21:00:49,762 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-29 21:00:49,762 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of e3-content-service
+2017-10-29 21:00:49,762 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for e3-content-service
+2017-10-29 21:00:49,767 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

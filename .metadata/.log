@@ -12422,3 +12422,177 @@ org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘
 
 !ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:49:14.731
 !MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:51:39.366
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:51:39.367
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:51:45.403
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:51:46.180
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:51:47.005
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:51:47.997
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:51:47.998
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-10-29 20:51:49.554
+!MESSAGE Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243)
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218)
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-10-29 20:51:49.555
+!MESSAGE Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-10-29 20:51:49.555
+!MESSAGE Missing cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:52:41.674
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:54:00.769
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:54:01.690
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:54:02.973
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:54:02.974
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:54:03.830
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:54:04.102
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:54:04.683
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:54:06.396
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:54:06.396
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-10-29 20:58:10.139
+!MESSAGE Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openPomEditor(OpenPomAction.java:243)
+	at org.eclipse.m2e.core.ui.internal.actions.OpenPomAction.openEditor(OpenPomAction.java:218)
+	at org.eclipse.m2e.editor.xml.PomHyperlinkDetector$6$1.run(PomHyperlinkDetector.java:616)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-10-29 20:58:10.139
+!MESSAGE Could not resolve artifact cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-10-29 20:58:10.139
+!MESSAGE Missing cn.e3mall:e3-content-interface:pom:0.0.1-SNAPSHOT
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:58:21.409
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:58:21.410
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:58:30.178
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:58:30.961
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:58:31.827
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:58:32.842
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:58:32.843
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:58:48.874
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:58:49.708
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-10-29 20:58:52.018
+!MESSAGE The POM for cn.e3mall:e3-content-interface:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:59:55.333
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 20:59:55.334
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:21.283
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:21.284
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:37.051
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:37.052
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:37.052
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:38.160
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:38.160
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:49.003
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:49.004
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:49.005
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:49.055
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:49.056
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:50.639
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:50.640
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-10-29 21:00:50.640
+!MESSAGE loading file 'pom.properties'
