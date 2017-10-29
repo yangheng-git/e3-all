@@ -215,4 +215,12 @@ public class ItemServiceImpl implements ItemService {
 		return par;
 	}
 
+	@Override
+	public Params batchDel(Params params) {
+		String[] ids = params.getIds().split(",");
+		Params par = new Params();
+		par.setStatus(itemMapper.batchDel(ids)>0? "200" : null);
+		return par;
+	}
+
 }

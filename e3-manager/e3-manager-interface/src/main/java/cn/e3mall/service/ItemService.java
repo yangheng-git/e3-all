@@ -34,6 +34,13 @@ public interface ItemService {
 	public E3Result addItem(TbItem item ,String desc);
 	
 	/**
+	 * 
+	 * @param params
+	 * @return 批量删除
+	 */
+	public Params batchDel(Params params);
+	
+	/**
 	 * 上架，下架
 	 * @param params
 	 * @return

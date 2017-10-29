@@ -39,6 +39,10 @@ public interface TbItemMapper {
     //批量上架
     int  batchReshelf(List<String> ids);
     
+    //使用map集合，可以手动通过status 选择上架，下架
     @SuppressWarnings("rawtypes")
 	int  batchReshelfandInstock(Map map);
+    
+    //批量删除
+    int batchDel(String[] ids);
 }

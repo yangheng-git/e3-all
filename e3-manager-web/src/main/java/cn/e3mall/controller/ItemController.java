@@ -71,6 +71,16 @@ public class ItemController {
 	}
 	
 	/**
+	 * 删除功能
+	 */
+	@RequestMapping("/rest/item/delete")
+	@ResponseBody
+	public Params Delete(Params params){
+		//实现批量删除 batchDel();
+		return itemService.batchDel(params);
+	}
+	
+	/**
 	 * 
 	 * @param params 参数
 	 * 			instock 有存货的

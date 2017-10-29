@@ -345,6 +345,15 @@
 			#{item}
 		</foreach>
 	</update>
+	
+	<!--  batchDel 批量删除-->
+	<delete id="batchDel">
+		delete from  tb_item where id in 
+			<foreach collection="array" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+	</delete>
+	
 
 
 </mapper>
