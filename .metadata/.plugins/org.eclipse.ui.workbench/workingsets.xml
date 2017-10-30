@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506733874656_1" label="app-web" name="app-web">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-web" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-web-interface" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-util" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-web-portal" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-web-console" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-web-common" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/app-dao" type="4"/>
-</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506733874656_1" label="app-web" name="app-web"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1504949078885_0" label="Window Working Set" name="Aggregate for window 1504949078885"/>
 </workingSetManager>
