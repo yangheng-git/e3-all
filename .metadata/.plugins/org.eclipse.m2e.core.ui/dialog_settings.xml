@@ -23,8 +23,18 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="590" key="height"/>
+		<item value="480" key="width"/>
+		<item value="120" key="y"/>
+		<item value="1263" key="x"/>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-parent"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\"/>
 			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-content"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -36,18 +46,10 @@
 			<item value="[name]"/>
 		</list>
 	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
-		<item value="590" key="height"/>
-		<item value="480" key="width"/>
-		<item value="120" key="y"/>
-		<item value="1263" key="x"/>
-	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
-			<item value="cn.e3mall"/>
 		</list>
 		<list key="package">
-			<item value="org."/>
 		</list>
 		<list key="artifactId">
 		</list>
@@ -61,6 +63,18 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 	<section name="MavenProjectImportWizardPage">
@@ -81,26 +95,16 @@
 			<item value="[name]"/>
 		</list>
 	</section>
-	<section name="MavenModuleWizardParentPage">
-		<list key="moduleName">
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
-	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="cn.e3mall"/>
+			<item value="e3-mall"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-content-service"/>
+			<item value="e3-portal-web"/>
+			<item value="e3-parent"/>
+			<item value="e3-portal"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
