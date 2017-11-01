@@ -23,12 +23,6 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
-		<item value="590" key="height"/>
-		<item value="480" key="width"/>
-		<item value="120" key="y"/>
-		<item value="1263" key="x"/>
-	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web"/>
@@ -45,6 +39,12 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="590" key="height"/>
+		<item value="480" key="width"/>
+		<item value="120" key="y"/>
+		<item value="1263" key="x"/>
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
@@ -65,18 +65,6 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
-	<section name="MavenModuleWizardParentPage">
-		<list key="moduleName">
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
-	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao"/>
@@ -95,16 +83,30 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="cn.e3-mall"/>
+			<item value="cn.e3mall"/>
 			<item value="e3-mall"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-portal-web"/>
-			<item value="e3-parent"/>
 			<item value="e3-portal"/>
+			<item value="e3-parent"/>
+			<item value="e3-portal-web"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
