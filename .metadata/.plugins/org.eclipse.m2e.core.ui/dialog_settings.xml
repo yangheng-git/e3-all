@@ -48,10 +48,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="cn.e3mall"/>
 		</list>
 		<list key="package">
+			<item value="org.e3.content.service"/>
 		</list>
 		<list key="artifactId">
+			<item value="e3-content-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -85,6 +88,9 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e3-content-service"/>
+			<item value="e3-content-interface"/>
+			<item value="e3-content-dao"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -97,15 +103,19 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="cn.e3-mall"/>
 			<item value="cn.e3mall"/>
+			<item value="cn.e3-mall"/>
 			<item value="e3-mall"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e3-portal"/>
+			<item value="e3-content-service"/>
+			<item value="e3-content"/>
+			<item value="e3-content-interface"/>
 			<item value="e3-parent"/>
+			<item value="e3-content-dao"/>
+			<item value="e3-portal"/>
 			<item value="e3-portal-web"/>
 		</list>
 		<list key="projectNameTemplate">

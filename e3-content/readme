@@ -1,0 +1,4 @@
+ e3-content 内容服务，负责首页广告的管理工作。 cms系统
+ e3-content			是聚合项目，在 pom文件中有配置端口为 8083的端口。
+ e3-content-service 是war包 。 引用了e3-manager-dao 进行数据访问。 web.xml 只需要加载spring容器。
+ e3-content-interface 是jar包。 引用了 e3-manager-pojo

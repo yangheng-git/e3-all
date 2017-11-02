@@ -1,23 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>cn.e3mall</groupId>
-		<artifactId>e3-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<!-- <groupId>cn.e3mall</groupId> -->
-	<artifactId>e3-content</artifactId>
-	<!-- <version>0.0.1-SNAPSHOT</version> -->
-	<packaging>pom</packaging>
-	<dependencies>
-		<dependency>
-			<groupId>cn.e3mall</groupId>
-			<artifactId>e3-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
-	<!-- 配置tomcat插件 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.e3mall</groupId>
+    <artifactId>e3-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <!-- <groupId>cn.e3mall</groupId> -->
+  <artifactId>e3-content</artifactId>
+  <!-- <version>0.0.1-SNAPSHOT</version> -->
+  <packaging>pom</packaging>
+  <modules>
+  	<module>e3-content-interface</module>
+  	<module>e3-content-service</module>
+  </modules>
+  
+  
+  <!-- 配置tomcat插件 -->
 	<build>
 		<plugins>
 			<plugin>
@@ -30,4 +28,5 @@
 			</plugin>
 		</plugins>
 	</build>
+  
 </project>
