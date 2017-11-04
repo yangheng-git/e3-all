@@ -1,0 +1,17 @@
+package cn.e3mall.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+/**
+ * 内容分类管理Controller
+ * @author yang
+ *
+ */
+@Controller
+public class ContentCateGoryController {
+
+	@Resource 
+	private ContentCateGoryServer c
+	
+}

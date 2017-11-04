@@ -7651,3 +7651,2460 @@ Caused by: java.io.IOException: 另一个程序已锁定文件的一部分，进
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:535)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:183)
 	... 7 more
+!SESSION 2017-11-04 22:59:39.068 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.osgi 2 0 2017-11-04 23:02:01.438
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-8,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.6.2.20150902-0002 [550]". To avoid deadlock, thread "Thread[Worker-8,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.m2e.jdt"; type="osgi.bundle"; version:Version="1.6.2.20150902-0002"; singleton:="true" [id=550] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3345)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3321)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2849)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2814)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:4067)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2017-11-04 23:02:05.349
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-5,5,main]" timed out waiting (5000ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.6.2.20150902-0002 [550]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.m2e.jdt"; type="osgi.bundle"; version:Version="1.6.2.20150902-0002"; singleton:="true" [id=550] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3345)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3321)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2849)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.ClasspathChange.generateDelta(ClasspathChange.java:235)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2032)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2017-11-04 23:02:06.592
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathHelpers", thread "Thread[Worker-8,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "org.eclipse.m2e.jdt_1.6.2.20150902-0002 [550]". To avoid deadlock, thread "Thread[Worker-8,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathHelpers" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.m2e.jdt"; type="osgi.bundle"; version:Version="1.6.2.20150902-0002"; singleton:="true" [id=550] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer.initialize(MavenClasspathContainerInitializer.java:44)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2814)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:4067)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2017-11-04 23:02:14.802
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer.getBuildPathManager(MavenClasspathContainerInitializer.java:80)
+	at org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer.initialize(MavenClasspathContainerInitializer.java:46)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.ClasspathChange.generateDelta(ClasspathChange.java:235)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2032)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-11-04 23:02:18.265
+!MESSAGE An internal error occurred during: "Initializing Java Tooling".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer.getBuildPathManager(MavenClasspathContainerInitializer.java:80)
+	at org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer.initialize(MavenClasspathContainerInitializer.java:46)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2814)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:4067)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-11-04 23:02:22.209
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:51.885
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:51.893
+!MESSAGE properties loading for project 'Servers'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:51.894
+!MESSAGE loading file 'catalina.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.014
+!MESSAGE properties loading for project 'e3-common'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.015
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.074
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.076
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.196
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.250
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.252
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.307
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.309
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.380
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.382
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.383
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.385
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.386
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.388
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.391
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.624
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.840
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:52.921
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.000
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.150
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.240
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.299
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.301
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.584
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.630
+!MESSAGE properties loading for project 'e3-manager-dao'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.631
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.632
+!MESSAGE properties loading for project 'e3-manager-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.632
+!MESSAGE properties loading for project 'e3-manager-pojo'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.633
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.633
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.676
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.677
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.678
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.678
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.680
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.782
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.794
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-04 23:02:53.797
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-manager-web\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-manager-web\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadAllProperty(ProjectProperties.java:51)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup.earlyStartup(Startup.java:35)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2852)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-manager-web\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 11 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-04 23:02:53.798
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-manager-web\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-manager-web\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadAllProperty(ProjectProperties.java:51)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup.earlyStartup(Startup.java:35)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2852)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:53.800
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.343
+!MESSAGE properties loading for project 'e3-parent'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.344
+!MESSAGE properties loading for project 'e3-portal-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.346
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.429
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.434
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.483
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.555
+!MESSAGE properties loading for project 'fastdfs_client'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.556
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.619
+!MESSAGE properties loading for project 'pagehelper'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:02:54.621
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.459
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.462
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.462
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.464
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.464
+!MESSAGE properties loading for project 'e3-portal-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.465
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.466
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.467
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:09.468
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.131
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.411
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.412
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.413
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.414
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.415
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.416
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.417
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.418
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.419
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.420
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.421
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.421
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.422
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.423
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.424
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.425
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.427
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.428
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.429
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:03:20.430
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.775
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.827
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.829
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.831
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.833
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.907
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-04 23:10:16.909
+!MESSAGE loading file 'pom.properties'
+!SESSION 2017-11-05 02:40:06.326 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.7.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-11-05 02:40:40.760
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\yang'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:55.991
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:55.993
+!MESSAGE properties loading for project 'Servers'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:55.994
+!MESSAGE loading file 'catalina.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.256
+!MESSAGE properties loading for project 'e3-common'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.257
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.258
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.259
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.287
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.288
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.289
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.289
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.290
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.291
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.291
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.292
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.293
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.294
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.294
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.296
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.296
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.297
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.343
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.396
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.397
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.397
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.398
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.399
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.400
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.429
+!MESSAGE properties loading for project 'e3-manager-dao'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.430
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.431
+!MESSAGE properties loading for project 'e3-manager-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.431
+!MESSAGE properties loading for project 'e3-manager-pojo'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.432
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.432
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.433
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.433
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.434
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.434
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.436
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.437
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.438
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.438
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.572
+!MESSAGE properties loading for project 'e3-parent'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.573
+!MESSAGE properties loading for project 'e3-portal-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.574
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.575
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.577
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.578
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.687
+!MESSAGE properties loading for project 'fastdfs_client'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.689
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.690
+!MESSAGE properties loading for project 'pagehelper'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:40:56.692
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.966
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.966
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.967
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.967
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.968
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.968
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 02:42:03.968
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-11-05 03:13:17.982
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:13:19.013
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:13:19.015
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:13:19.015
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:13:19.016
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:13:19.016
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.501
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.501
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.502
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.502
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.503
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.503
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.504
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.504
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.505
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.505
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.506
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.506
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.506
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.507
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.507
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.508
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.508
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.509
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.509
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:14:58.509
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-11-05 03:15:44.910
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:15:45.471
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:15:45.472
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:15:45.473
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:15:45.473
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:15:45.474
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.628
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.711
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.713
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.714
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.715
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.717
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.718
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:26:46.720
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.278
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.279
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.280
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.280
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.281
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.281
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.281
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.282
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.282
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.282
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.283
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.283
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.283
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.284
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.284
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.285
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.285
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:27:03.286
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.886
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.889
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:02.891
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\classes\META-INF\maven\cn.e3mall\e3-manager-dao\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\classes\META-INF\maven\cn.e3mall\e3-manager-dao\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\classes\META-INF\maven\cn.e3mall\e3-manager-dao\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:02.934
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\classes\META-INF\maven\cn.e3mall\e3-manager-dao\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\classes\META-INF\maven\cn.e3mall\e3-manager-dao\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.936
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:02.937
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\maven-archiver\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\maven-archiver\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:02.938
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\maven-archiver\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.939
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:02.940
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-interface\target\classes\META-INF\maven\cn.e3mall\e3-manager-interface\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-interface\target\classes\META-INF\maven\cn.e3mall\e3-manager-interface\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-interface\target\classes\META-INF\maven\cn.e3mall\e3-manager-interface\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:02.941
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-interface\target\classes\META-INF\maven\cn.e3mall\e3-manager-interface\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-interface\target\classes\META-INF\maven\cn.e3mall\e3-manager-interface\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.942
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:02.943
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-pojo\target\classes\META-INF\maven\cn.e3mall\e3-manager-pojo\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-pojo\target\classes\META-INF\maven\cn.e3mall\e3-manager-pojo\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-pojo\target\classes\META-INF\maven\cn.e3mall\e3-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:02.944
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-pojo\target\classes\META-INF\maven\cn.e3mall\e3-manager-pojo\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-pojo\target\classes\META-INF\maven\cn.e3mall\e3-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.945
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.947
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.948
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.949
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.951
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.952
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.954
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.955
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:02.957
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.507
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.508
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.508
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.509
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.509
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.510
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.510
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.510
+!MESSAGE properties loading for project 'e3-manager-dao'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.511
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.511
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.511
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.512
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:03.512
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.324
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.325
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.326
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.326
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.327
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.327
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.327
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.328
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.328
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:04.329
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.142
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.142
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:43.143
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1598)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:131)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:291)
+	at org.eclipse.debug.ui.RefreshTab.refreshResources(RefreshTab.java:408)
+	at org.eclipse.m2e.internal.launch.MavenRuntimeLaunchSupport$BackgroundResourceRefresher$1.run(MavenRuntimeLaunchSupport.java:197)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:43.143
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1598)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:131)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:291)
+	at org.eclipse.debug.ui.RefreshTab.refreshResources(RefreshTab.java:408)
+	at org.eclipse.m2e.internal.launch.MavenRuntimeLaunchSupport$BackgroundResourceRefresher$1.run(MavenRuntimeLaunchSupport.java:197)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.144
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:43.144
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1598)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:131)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:291)
+	at org.eclipse.debug.ui.RefreshTab.refreshResources(RefreshTab.java:408)
+	at org.eclipse.m2e.internal.launch.MavenRuntimeLaunchSupport$BackgroundResourceRefresher$1.run(MavenRuntimeLaunchSupport.java:197)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:43.144
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1598)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:131)
+	at org.eclipse.debug.core.RefreshUtil.refreshResources(RefreshUtil.java:291)
+	at org.eclipse.debug.ui.RefreshTab.refreshResources(RefreshTab.java:408)
+	at org.eclipse.m2e.internal.launch.MavenRuntimeLaunchSupport$BackgroundResourceRefresher$1.run(MavenRuntimeLaunchSupport.java:197)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.145
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.145
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.146
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.146
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.147
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.147
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.147
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.148
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.148
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.149
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.149
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.149
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.150
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.150
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.151
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.304
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.305
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:43.305
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:157)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:43.325
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\classes\META-INF\maven\cn.e3mall\e3-content-interface\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:157)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.327
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:32:43.329
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:157)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:32:43.330
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-interface\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:157)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.330
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.331
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.331
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.331
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.332
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.332
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.332
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.333
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.333
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.334
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.334
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.334
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.335
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.335
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.335
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.336
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.336
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.409
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.412
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.413
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.415
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.416
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.418
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.419
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.420
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.422
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.423
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:32:43.425
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.601
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.602
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.603
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.603
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.604
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.604
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.604
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.605
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.605
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.605
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.606
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.606
+!MESSAGE properties loading for project 'e3-manager-dao'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.607
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.743
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.745
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.745
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.746
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.747
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.747
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.748
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.748
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.749
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:58.749
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.317
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.318
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.319
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.319
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.319
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.320
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.321
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.322
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.322
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.323
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:34:59.323
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.535
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.537
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.537
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.537
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.538
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.538
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.538
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.539
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.539
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.540
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.540
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.540
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.541
+!MESSAGE properties loading for project 'e3-manager-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.541
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.594
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.594
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.595
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.595
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.596
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.596
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.597
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.597
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.597
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.598
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.598
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.901
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.902
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.902
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.902
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.903
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.903
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.903
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.904
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.904
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.905
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.905
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:09.905
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.001
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.003
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.003
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.004
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.004
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.004
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.005
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.005
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.005
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.006
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.006
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.007
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.007
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.007
+!MESSAGE properties loading for project 'e3-manager-pojo'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.008
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.130
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.131
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.132
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.132
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.133
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.133
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.133
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.134
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.134
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.135
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.135
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:18.136
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.165
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.166
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.166
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.167
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.167
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.167
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.168
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.168
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.169
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.169
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.169
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.170
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:35:19.170
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.837
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.839
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.839
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.840
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.840
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.840
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:37:48.841
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\conf\db.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\conf\db.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\conf\db.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:37:48.841
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\conf\db.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\conf\db.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.841
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:37:48.842
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\log4j.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\log4j.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\log4j.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:37:48.842
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\log4j.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\e3-content-service\WEB-INF\classes\log4j.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.842
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:37:48.843
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-content-service\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-content-service\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-content-service\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:37:48.843
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-content-service\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\m2e-wtp\web-resources\META-INF\maven\cn.e3mall\e3-content-service\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.843
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2017-11-05 03:37:48.844
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\maven-archiver\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\maven-archiver\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:391)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	... 13 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2017-11-05 03:37:48.844
+!MESSAGE File not found: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\maven-archiver\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: E:\apache-workspaces-Eclipse-taotao2016\e3-content\e3-content-service\target\maven-archiver\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:834)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:269)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:83)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:48.844
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.148
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.149
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.149
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.149
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.150
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.150
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.151
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.151
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.152
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:37:49.152
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.415
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.418
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.418
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.419
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.419
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.419
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:36.420
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.584
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.586
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.586
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.586
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.587
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.587
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.588
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:38:38.588
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.562
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.563
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.563
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.563
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.564
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.564
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.564
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.565
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.565
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.566
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.566
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.566
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.567
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.567
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.568
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.568
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.568
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.569
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.569
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.945
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.946
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.947
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.947
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.947
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.948
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.948
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.948
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.949
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.949
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.949
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.950
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.950
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.951
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.951
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.952
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.952
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.953
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.953
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:40:36.953
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.180
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.181
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.181
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.182
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.182
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.182
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.182
+!MESSAGE properties loading for project 'e3-content-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.182
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.184
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.184
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.185
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.185
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.186
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.186
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.187
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.187
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.187
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.188
+!MESSAGE properties loading for project 'e3-manager-dao'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.188
+!MESSAGE properties loading for project 'e3-manager-interface'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.188
+!MESSAGE properties loading for project 'e3-manager-pojo'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.189
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.189
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.190
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.190
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.190
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.192
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.192
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:26.193
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.896
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.897
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.897
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.898
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.898
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.899
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.900
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.900
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.901
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.901
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.902
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.902
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.902
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.903
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.903
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.904
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.924
+!MESSAGE properties loading for project 'e3-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.925
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.925
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.926
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.926
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.926
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.927
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.927
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.928
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.928
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.929
+!MESSAGE properties loading for project 'e3-manager-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.929
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.929
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.930
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:27.930
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2017-11-05 03:47:30.422
+!MESSAGE Could not acquire INavigatorContentService: Project Explorer not found.
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.788
+!MESSAGE properties loading for project 'e3-content'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.789
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.789
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.790
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.790
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.790
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.791
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.791
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.791
+!MESSAGE properties loading for project 'e3-content-service'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.791
+!MESSAGE loading file 'db.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.792
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.792
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.792
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.793
+!MESSAGE properties loading for project 'e3-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.794
+!MESSAGE loading file 'resource.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.795
+!MESSAGE loading file 'log4j.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.795
+!MESSAGE loading file 'pom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-11-05 03:47:30.795
+!MESSAGE loading file 'logging.properties'
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-11-05 03:48:13.914
+!MESSAGE Exception caught during execution of add command
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:211)
+	at org.eclipse.egit.core.op.CommitOperation.addUntracked(CommitOperation.java:224)
+	at org.eclipse.egit.core.op.CommitOperation.access$4(CommitOperation.java:212)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:197)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:208)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:216)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:379)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:535)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:183)
+	... 7 more

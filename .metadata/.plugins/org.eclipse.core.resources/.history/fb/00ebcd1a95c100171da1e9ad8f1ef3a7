@@ -1,0 +1,25 @@
+package cn.e3mall.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import cn.e3mall.common.pojo.EasyUITreeNode;
+import cn.e3mall.content.service.ContentCateGoryService;
+/**
+ * 内容分类管理Controller
+ * @author yang
+ *
+ */
+@Controller
+public class ContentCatController {
+
+	@Resource 
+	private ContentCateGoryService contentCateGoryService;
+	
+	public List<EasyUITreeNode> getContentCateGoryTreeNode(@RequestParam(name) long ParentId){}
+	
+}
