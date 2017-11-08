@@ -31,5 +31,5 @@ public interface TbContentCategoryMapper {
     int updateByPrimaryKey(TbContentCategory record);
     
     
-    int  batchDelete(List<Long> list);
+    int  batchDelete(List list);
 }
