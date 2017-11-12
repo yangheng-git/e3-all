@@ -1,0 +1,10 @@
+package cn.e3mall.controller;
+/**
+ * 内容controller
+ * 
+ * @author yang
+ *
+ */
+public class ContentController {
+
+}
