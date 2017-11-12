@@ -6,7 +6,8 @@
 	</section>
 	<section name="EditorSelectionDialog">
 		<item value="false" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
-		<item value="org.eclipse.ui.browser.editorSupport" key="EditorSelectionDialog.STORE_ID_DESCR"/>
+		<item value="org.eclipse.jdt.ui.PropertiesFileEditor" key="EditorSelectionDialog.STORE_ID_DESCR"/>
+		<item value=".properties" key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="767" key="dialogHeight"/>

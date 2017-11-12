@@ -13,11 +13,11 @@
 
 
 	<dependencies>
-		<!-- <dependency>
+		<dependency>
 			<groupId>cn.e3mall</groupId>
-			<artifactId>e3-manager-interface</artifactId>
+			<artifactId>e3-content-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency> -->
+		</dependency>
 		<!-- JSP相关 -->
 		<dependency>
 			<groupId>jstl</groupId>

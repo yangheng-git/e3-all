@@ -1,5 +1,7 @@
 package cn.e3mall.content.service;
 
+import java.util.List;
+
 import cn.e3mall.common.pojo.EasyUIDatagridResult;
 import cn.e3mall.common.pojo.Params;
 import cn.e3mall.common.utils.E3Result;
@@ -14,4 +16,7 @@ public interface ContentService {
 	Params deleteContent(Params  params);
 
 	E3Result edit(TbContent content);
+	
+	
+	List<TbContent> getTbContentByCid(Long id );
 }

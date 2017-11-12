@@ -73,7 +73,7 @@ public class ContentServiceImpl implements ContentService {
 	
 	
 	/**
-	 * 根据内容分类id获取内容
+	 * 根据内容分类id获取内容 parent-web调用的方法，用来获取某个菜单下的内容
 	 * WithBLOBS 要不要加上大文本内容
 	 * @return
 	 */
