@@ -36,8 +36,15 @@ public class ContentCatController {
 	}
 	
 	@RequestMapping("/content/category/delete/")
-	public void deleteContentCategory(Long id ){
-		contentCateGoryService.deleteeContentCatgory(id);
+	public E3Result deleteContentCategory(Long id ){
+		return  contentCateGoryService.deleteeContentCatgory(id);
+	}
+	
+	
+	@RequestMapping("/content/category/update")
+	public E3Result updateContentCatgory(Long id , String name){
+		
+		return contentCateGoryService.updateContentCatgory(id, name);
 	}
 	
 }

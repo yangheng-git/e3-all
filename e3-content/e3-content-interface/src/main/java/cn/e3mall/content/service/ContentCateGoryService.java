@@ -11,6 +11,8 @@ public interface ContentCateGoryService {
 
 	E3Result addContentCategor(Long parentId, String name);
 
-	int deleteeContentCatgory(Long id);
+	E3Result deleteeContentCatgory(Long id);
+	
+	E3Result updateContentCatgory(Long id ,String name);
 
 }

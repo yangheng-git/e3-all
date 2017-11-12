@@ -68,9 +68,8 @@ public class ContentCateGoryServiceImpl implements ContentCateGoryService {
 		contentCategory.setSortOrder(1);
 		contentCategory.setUpdated(new Date());
 		contentCategory.setParentId(parentId);
-
+		E3Result e3Result =null;
 		int i = contentCategoryMapping.insert(contentCategory);
-		E3Result e3Result = new E3Result();
 		if (i > 0) {
 			// 判读父节点的isParaent属性，如果不是true,改为true
 			TbContentCategory categoryParent = contentCategoryMapping.selectByPrimaryKey(parentId);
@@ -81,8 +80,7 @@ public class ContentCateGoryServiceImpl implements ContentCateGoryService {
 			}
 
 			// 因为在mapping中设置的返回主键，所以在插入成功后会将自动生成的id返回的TbContentCateGory中。
-			e3Result.setData(contentCategory);
-			e3Result.setStatus(200);
+			e3Result	 = E3Result.ok(categoryParent);
 
 		}
 
@@ -93,14 +91,14 @@ public class ContentCateGoryServiceImpl implements ContentCateGoryService {
 	 * 删除 节点 如果该节点是叶子节点或者是只包含叶子节点的父节点，就允许删除。 如果该节点中包含父节点就不允许删除
 	 */
 	@Override
-	public int deleteeContentCatgory(Long id) {
+	public E3Result deleteeContentCatgory(Long id) {
 		// 本节点
 		TbContentCategory IDnode = contentCategoryMapping.selectByPrimaryKey(id);
 		int isdelete = 0 ;
 		
 		// 判断是不是叶子节点，是的话直接删除
 		if (!IDnode.getIsParent()) {
-			isdelete=contentCategoryMapping.deleteByPrimaryKey(id);
+			contentCategoryMapping.deleteByPrimaryKey(id);
 		} else {
 			// 判断其内包含的节点有没有父节点
 			TbContentCategoryExample ISparentExample = new TbContentCategoryExample();
@@ -147,7 +145,23 @@ public class ContentCateGoryServiceImpl implements ContentCateGoryService {
 			contentCategoryMapping.updateByPrimaryKeySelective(ParrntNode);
 		}
 
-		return isdelete;
+		return E3Result.ok();
+	}
+
+	
+	
+	/**
+	 * 重命名
+	 */
+	@Override
+	public E3Result updateContentCatgory(Long id, String name) {
+		TbContentCategory category = new TbContentCategory();
+		category.setId(id);
+		category.setName(name);
+		category.setUpdated(new Date());
+		int i = contentCategoryMapping.updateByPrimaryKeySelective(category);
+
+		return E3Result.ok();
 	}
 
 }

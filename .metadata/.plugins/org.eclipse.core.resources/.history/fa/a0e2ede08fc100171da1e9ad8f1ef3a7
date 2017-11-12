@@ -1,8 +1,0 @@
-package cn.e3mall.content.service;
-
-import cn.e3mall.common.pojo.EasyUITreeNode;
-
-public interface ContentCateGoryService {
-	public  EasyUITreeNode getCateGoryNode(long node);
-
-}
