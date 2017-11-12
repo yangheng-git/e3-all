@@ -49,8 +49,13 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao"/>
 			<item value="E:\apache-workspaces-Eclipse-taotao2016"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager-web"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-content"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-common"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-parent"/>
+			<item value="E:\apache-workspaces-Eclipse-taotao2016\e3-manager\e3-manager-dao"/>
 			<item value="E:\apache-workspaces-Eclipse-taotao2016\apache-workspaces-Eclipse-taotao2016-utils\fastdfs_client"/>
 			<item value="F:\JAVAWorkspace\j2eeclass\git\app-web"/>
 			<item value="E:\apache-workspaces-Eclipse-taotao2016\apache-workspaces-Eclipse-taotao2016-utils"/>

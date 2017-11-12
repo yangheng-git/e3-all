@@ -1,6 +1,11 @@
 package cn.e3mall.controller;
 
+import java.io.IOException;
 import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,8 +41,11 @@ public class ContentCatController {
 	}
 	
 	@RequestMapping("/content/category/delete/")
-	public E3Result deleteContentCategory(Long id ){
-		return  contentCateGoryService.deleteeContentCatgory(id);
+	public E3Result deleteContentCategory(Long id  ,HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException{
+			contentCateGoryService.deleteeContentCatgory(id);
+			request.getRequestDispatcher("/content/category/list").forward(request, response);
+		
+		return  null;
 	}
 	
 	

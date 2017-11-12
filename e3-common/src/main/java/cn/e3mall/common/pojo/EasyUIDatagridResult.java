@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 服务层和表现层通用的pojo
+ * 服务层和表现层通用的分页pojo
  * @author yang
  *
  */

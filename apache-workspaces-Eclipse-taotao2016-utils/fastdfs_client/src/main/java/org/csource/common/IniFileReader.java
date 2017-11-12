@@ -120,6 +120,7 @@ public class IniFileReader
 			return values;
 		}
 		
+		@SuppressWarnings("rawtypes")
 		Object[] objs = ((ArrayList)obj).toArray();
 		values = new String[objs.length];
 		System.arraycopy(objs, 0, values, 0, objs.length);

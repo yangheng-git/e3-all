@@ -64,13 +64,15 @@ function menuHandler(item){
 			if(r){
 				$.post("/content/category/delete/",{id:node.id},function(){
 					tree.tree("remove",node.target);
+				
 					
 				});	
 			}
 			
 		});
-		top.location.reload();
+		//top.location.reload();
 	}
+	//	$("#contentCategory").datagrid("reload");
 	
 	
 	

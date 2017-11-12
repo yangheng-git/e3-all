@@ -2,7 +2,7 @@ package cn.e3mall.common.pojo;
 
 import java.io.Serializable;
 /**
- * 实现上下架功能。
+ * 实现上下架功能。 删除也可以用
  * status =200 表示成功
  */
 public class Params implements Serializable {

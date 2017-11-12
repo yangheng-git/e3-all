@@ -33,4 +33,7 @@ public interface TbContentMapper {
     int updateByPrimaryKeyWithBLOBs(TbContent record);
 
     int updateByPrimaryKey(TbContent record);
+    
+    //批量删除
+    int batchDel(String[] ids);
 }
