@@ -61,7 +61,7 @@ public class ItemController {
 	 * @param desc
 	 * @return	添加商品
 	 */
-	@RequestMapping("/save")
+	@RequestMapping("/item/save")
 	@ResponseBody
 	public E3Result saveItem(TbItem item ,String desc){
 		

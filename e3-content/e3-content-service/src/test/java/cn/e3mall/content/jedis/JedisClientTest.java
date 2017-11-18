@@ -19,6 +19,8 @@ public class JedisClientTest {
 		String xmlfile = "classpath:spring/applicationContext-redis.xml";
 		@SuppressWarnings("resource")
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlfile);
+		
+		//引用的接口，而不是 单机或集群的实现类，
 		JedisClient jedisClient =  applicationContext.getBean(JedisClient.class);
 		jedisClient.set("jedisClusterClient", "jedisClusterClientClient");
 		

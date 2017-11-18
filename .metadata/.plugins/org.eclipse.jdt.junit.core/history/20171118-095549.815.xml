@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="JedistTest.testJedis" project="e3-content-service" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testJedis" classname="cn.e3mall.content.jedis.JedistTest" time="0.011"/>
-</testrun>

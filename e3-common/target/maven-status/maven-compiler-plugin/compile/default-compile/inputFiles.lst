@@ -3,5 +3,8 @@ E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common
 E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\pojo\EasyUIDatagridResult.java
 E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\utils\E3Result.java
 E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\utils\IDUtils.java
+E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\jedis\JedisClient.java
+E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\jedis\JedisClientCluster.java
 E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\pojo\EasyUITreeNode.java
 E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\pojo\Params.java
+E:\apache-workspaces-Eclipse-taotao2016\e3-common\src\main\java\cn\e3mall\common\jedis\JedisClientPool.java
