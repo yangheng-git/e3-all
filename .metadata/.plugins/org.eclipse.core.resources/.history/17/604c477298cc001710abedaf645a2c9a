@@ -1,0 +1,13 @@
+package cn.e3mall.common.pojo;
+
+import java.io.Serializable;
+
+public class SearchPojo implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6689641623325463683L;
+
+	
+}

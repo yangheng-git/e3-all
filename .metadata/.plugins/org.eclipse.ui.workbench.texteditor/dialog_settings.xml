@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="JedisCluster" key="selection"/>
+		<item value="solrj" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="solrj"/>
 			<item value="JedisCluster"/>
 			<item value="jedis"/>
 			<item value="delete"/>
@@ -15,7 +16,6 @@
 			<item value="&#x09;&#x09;&lt;commons-fileupload.version&gt;1.3.1&lt;/commons-fileupload.version&gt;"/>
 			<item value="file"/>
 			<item value="\"/>
-			<item value="E3"/>
 		</list>
 		<list key="replacehistory">
 			<item value="/"/>

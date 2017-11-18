@@ -11,10 +11,13 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="e3-search-service"/>
+			<item value="e3-search"/>
+			<item value="e3-search-interface"/>
+			<item value="e3-parent"/>
 			<item value="e3-content-service"/>
 			<item value="e3-content"/>
 			<item value="e3-content-interface"/>
-			<item value="e3-parent"/>
 			<item value="e3-content-dao"/>
 			<item value="e3-portal"/>
 			<item value="e3-portal-web"/>
@@ -83,6 +86,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e3-search-service"/>
+			<item value="e3-search-interface"/>
 			<item value="e3-content-service"/>
 			<item value="e3-content-interface"/>
 			<item value="e3-content-dao"/>
@@ -115,13 +120,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.e3.content.service"/>
+			<item value="org.e3.search.service"/>
 		</list>
 		<list key="groupId">
 			<item value="cn.e3mall"/>
 		</list>
 		<list key="artifactId">
-			<item value="e3-content-service"/>
+			<item value="e3-search-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -1,0 +1,5 @@
+package cn.e3mall.search.mapper;
+
+public interface searchMapper {
+
+}

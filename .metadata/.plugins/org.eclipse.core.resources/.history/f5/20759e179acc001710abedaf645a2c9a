@@ -1,0 +1,10 @@
+package cn.e3mall.search;
+
+public class SearchTest {
+	
+	public void TestSearch(){
+		
+		
+	}
+
+}
