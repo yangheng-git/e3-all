@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;applicationContext-redis.xml&apos; to &apos;spring&apos;" description="Move &apos;applicationContext-redis.xml&apos; to &apos;spring&apos;" destination="src/main/resources/spring" element1="/e3-manager-service/src/main/resources/spring/applicationContext-redis.xml" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1510975531461" updateReferences="true"/>
+</session>

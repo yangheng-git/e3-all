@@ -1,0 +1,8 @@
+package cn.e3mall.content.jedis;
+
+public class JedistTest {
+
+	public void testJedis(){
+		
+	}
+}

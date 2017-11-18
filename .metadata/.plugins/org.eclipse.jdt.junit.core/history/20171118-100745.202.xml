@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JedistTest" project="e3-content-service" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="cn.e3mall.content.jedis.JedistTest" time="0.102">
+    <testcase name="testJedis" classname="cn.e3mall.content.jedis.JedistTest" time="0.039"/>
+    <testcase name="testJedisPool" classname="cn.e3mall.content.jedis.JedistTest" time="0.063"/>
+  </testsuite>
+</testrun>

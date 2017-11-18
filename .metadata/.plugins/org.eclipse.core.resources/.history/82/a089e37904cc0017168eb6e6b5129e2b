@@ -1,0 +1,43 @@
+package cn.e3mall.content.jedis;
+
+import org.junit.Test;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+/**
+ * JEDIS 的特点 每一个 redis的命令都对应一个方法。
+ * @author yang
+ *
+ */
+public class JedistTest {
+	
+	//单机版测试 
+	@Test
+	public void testJedis(){
+		Jedis jedis = new Jedis("192.168.25.147",6379);
+		jedis.set("张三", "zhangsan");
+		System.out.println(jedis.get("张三"));
+		
+		for (int i = 0; i < 100; i++) {
+			jedis.incr("李四");
+		}
+		
+		System.out.println(jedis.get("李四"));
+		jedis.close();
+	}
+	
+	
+	//连接池版
+	public void testJedisPool(){
+		JedisPool jedisPool = new JedisPool();
+		Jedis jedis = jedisPool.getResource();
+		
+		jedis.hset("myhase", "field1", "field");
+		
+		System.out.println(jedis.hget("myhase", "field1"));
+		jedis.close();
+		
+		
+	}
+	
+}

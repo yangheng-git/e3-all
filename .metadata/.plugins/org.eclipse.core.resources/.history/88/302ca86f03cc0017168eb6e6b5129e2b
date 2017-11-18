@@ -1,0 +1,15 @@
+package cn.e3mall.content.jedis;
+
+import redis.clients.jedis.Jedis;
+/**
+ * JEDIS 的特点 每一个 redis的命令都对应一个方法。
+ * @author yang
+ *
+ */
+public class JedistTest {
+	
+	//单机版测试 
+	public void testJedis(){
+		Jedis jedis = new Jedis("192.168.25.147",6379);
+	}
+}

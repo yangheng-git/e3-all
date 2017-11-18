@@ -1,0 +1,11 @@
+package cn.e3mall.content.jedis;
+
+import redis.clients.jedis.Jedis;
+
+public class JedistTest {
+	
+	//单机版测试 
+	public void testJedis(){
+		Jedis jedis = new Jedis("192.168.25.147",6379);
+	}
+}
