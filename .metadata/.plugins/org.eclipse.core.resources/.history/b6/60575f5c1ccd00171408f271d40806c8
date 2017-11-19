@@ -1,0 +1,46 @@
+package cn.e3mall.search.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.common.SolrInputDocument;
+
+import com.alibaba.dubbo.config.annotation.Service;
+
+import cn.e3mall.common.pojo.SearchItem;
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.search.mapper.ItemMapper;
+import cn.e3mall.search.service.SearchItemService;
+/**
+ * s索引库维护Service 
+ * @author yang
+ *
+ */
+@Service
+public class SearchItemServiceImpl  implements SearchItemService{
+
+	@Resource
+	private ItemMapper itemMapper;
+	
+	@Resource
+	private SolrServer solrServer;
+	
+	/**
+	 * 从数据库中取出需要被索引库维护的数据，并导入的索引库
+	 */
+	@Override
+	public E3Result importAllItems() {
+		List<SearchItem> list = itemMapper.getItemList();
+		
+		//将list中的数据添加到solrDocument 中
+		for (SearchItem searchItem : list) {
+			SolrInputDocument document = new SolrInputDocument();
+			document.setField("id",searchItem.getId() );
+		}
+		
+		return null;
+	}
+
+}

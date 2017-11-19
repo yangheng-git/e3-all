@@ -1,0 +1,7 @@
+package cn.e3mall.search.service.impl;
+
+import cn.e3mall.search.service.SearchItemService;
+
+public class SearchItemServiceImpl  implements SearchItemService{
+
+}

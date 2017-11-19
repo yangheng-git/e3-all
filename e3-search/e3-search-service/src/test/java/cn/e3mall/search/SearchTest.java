@@ -3,13 +3,12 @@ package cn.e3mall.search;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.apache.solr.common.SolrInputDocument;
-import org.junit.Test;
 
 public class SearchTest {
 	
-	@Test
+	
 	public void addDocument() throws Exception, Exception{
-		//创建一个SolrServer对象，创建一个连接。参数solr服务的url
+				//创建一个SolrServer对象，创建一个连接。参数solr服务的url
 				SolrServer solrServer = new HttpSolrServer("http://192.168.25.148:8080/solr/collection1");
 				//创建一个文档对象SolrInputDocument
 				SolrInputDocument document = new SolrInputDocument();
@@ -22,6 +21,15 @@ public class SearchTest {
 				//提交
 				solrServer.commit();
 		
+	}
+	
+	public void delDocument() throws Exception, Exception{
+		SolrServer solrServer = new HttpSolrServer("http://192.168.25.148:8080/solr/collection1");
+		//删除文档
+		//solrServer.deleteById("doc01");
+		solrServer.deleteByQuery("id:doc01");
+		//提交
+		solrServer.commit();
 	}
 
 }

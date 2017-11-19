@@ -1,0 +1,15 @@
+package cn.e3mall.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+
+import cn.e3mall.search.service.SearchItemService;
+
+@Controller
+public class SearchIteemController {
+
+	@Resource
+	private SearchItemService searchItemService;
+	
+}

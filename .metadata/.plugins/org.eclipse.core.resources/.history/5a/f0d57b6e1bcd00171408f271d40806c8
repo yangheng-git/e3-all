@@ -1,0 +1,24 @@
+package cn.e3mall.search.service.impl;
+
+import com.alibaba.dubbo.config.annotation.Service;
+
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.search.service.SearchItemService;
+/**
+ * s索引库维护Service 
+ * @author yang
+ *
+ */
+@Service
+public class SearchItemServiceImpl  implements SearchItemService{
+
+	/**
+	 * 从数据库中取出需要被索引库维护的数据，并导入的索引库
+	 */
+	@Override
+	public E3Result importAllItems() {
+		
+		return null;
+	}
+
+}

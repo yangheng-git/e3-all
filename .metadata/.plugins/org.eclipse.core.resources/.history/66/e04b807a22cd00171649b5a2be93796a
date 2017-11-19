@@ -1,0 +1,19 @@
+package cn.e3mall.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+
+import cn.e3mall.search.service.SearchItemService;
+/**
+ * 索引库维护Controller 
+ * @author yang
+ *
+ */
+@Controller
+public class SearchIteemController {
+
+	@Resource
+	private SearchItemService searchItemService;
+	
+}

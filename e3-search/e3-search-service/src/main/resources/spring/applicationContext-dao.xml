@@ -30,6 +30,6 @@
 	</bean>
 	<!-- 使用的是 e3-manager的dao ，所以扫描cn.e3mall.mapperb 不用修改 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="cn.e3mall.mapper" />
+		<property name="basePackage" value="cn.e3mall.mapper,cn.e3mall.search.mapper" />
 	</bean>
 </beans>

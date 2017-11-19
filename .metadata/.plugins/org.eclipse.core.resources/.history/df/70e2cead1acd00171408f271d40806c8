@@ -1,0 +1,5 @@
+package cn.e3mall.search.service.impl;
+
+public class SearchItemService {
+
+}

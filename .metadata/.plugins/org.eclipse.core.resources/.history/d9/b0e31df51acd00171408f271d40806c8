@@ -1,0 +1,14 @@
+package cn.e3mall.search.service.impl;
+
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.search.service.SearchItemService;
+
+public class SearchItemServiceImpl  implements SearchItemService{
+
+	@Override
+	public E3Result importAllItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
