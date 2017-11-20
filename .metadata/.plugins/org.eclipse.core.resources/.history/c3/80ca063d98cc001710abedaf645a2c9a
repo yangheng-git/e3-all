@@ -1,7 +1,0 @@
-package cn.e3mall.common.pojo;
-
-import java.io.Serializable;
-
-public class SearchPojo implements Serializable {
-
-}

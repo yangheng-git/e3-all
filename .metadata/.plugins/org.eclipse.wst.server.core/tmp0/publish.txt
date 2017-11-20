@@ -1,9 +1,0 @@
-#Tomcat publish data
-#Thu Nov 16 14:33:19 CST 2017
-org.eclipse.jst.j2ee.server\:fastdfs_client=WEB-INF/lib/fastdfs_client-1.25.jar
-org.eclipse.jst.j2ee.server\:e3-manager-pojo=WEB-INF/lib/e3-manager-pojo-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.jee.server\:/binary\:E\:\\apache-maven-repository\\repository\\org\\springframework\\spring-web\\4.2.4.RELEASE\\spring-web-4.2.4.RELEASE.jar=WEB-INF/lib/spring-web-4.2.4.RELEASE.jar
-org.eclipse.jst.j2ee.server\:e3-content-interface=WEB-INF/lib/e3-content-interface-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.j2ee.server\:e3-manager-dao=WEB-INF/lib/e3-manager-dao-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.j2ee.server\:pagehelper=WEB-INF/lib/pagehelper-3.4.2-fix.jar
-org.eclipse.jst.j2ee.server\:e3-common=WEB-INF/lib/e3-common-0.0.1-SNAPSHOT.jar
