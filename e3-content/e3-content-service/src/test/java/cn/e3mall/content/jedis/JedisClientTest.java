@@ -14,7 +14,7 @@ import cn.e3mall.common.jedis.JedisClient;
  */
 public class JedisClientTest {
 	
-	@Test
+	
 	public void testJedisClient() {
 		String xmlfile = "classpath:spring/applicationContext-redis.xml";
 		@SuppressWarnings("resource")

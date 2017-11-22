@@ -17,7 +17,7 @@ import redis.clients.jedis.JedisPool;
 public class JedistTest {
 	
 	//单机版测试 
-	@Test
+	
 	public void testJedis(){
 		//创建一个连接Jedis对象，参数：host、port
 		//直接使用jedis操作redis。所有jedis的命令都对应一个方法。
@@ -40,7 +40,7 @@ public class JedistTest {
 	/**
 	 * //连接池版
 	 */	
-	@Test
+
 	public void testJedisPool(){
 		//创建一个连接池对象，两个参数host、port
 		//从连接池获得一个连接，就是一个jedis对象。
@@ -64,7 +64,7 @@ public class JedistTest {
 	/**
 	 * 连接集群
 	 */
-	@Test
+
 	public void TestJedisCluster(){
 		//创建一个JedisCluster对象。 有一个参数 nodes是SET类型，set中包含着若干HostAndPort对象。。
 		//直接使用JedisCluster对象操作redis。
