@@ -24,7 +24,10 @@ public class SearchIteemController {
 	 */
 	@RequestMapping("/index/item/import")
 	public E3Result ImportSearchItem(){
-		return searchItemService.importAllItems();
+		E3Result resout =	searchItemService.importAllItems();
+		System.err.print(resout.getStatus());
+		
+		return resout;
 	}
 	
 }
