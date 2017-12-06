@@ -45,6 +45,9 @@ public class ContentServiceImpl implements ContentService {
 	
 	@Override
 	public E3Result addContent(TbContent content) {
+		
+		
+		
 		try {//删除缓存中该数据的缓存。
 		
 			jedisClient.hdel(CONTENT_LIST, content.getCategoryId()+"");	
@@ -55,7 +58,7 @@ public class ContentServiceImpl implements ContentService {
 		
 		content.setCreated(new Date());
 		content.setUpdated(new Date());
-		contentMapper.insert(content);
+		int insert = contentMapper.insert(content);
 
 		return E3Result.ok();
 	}
