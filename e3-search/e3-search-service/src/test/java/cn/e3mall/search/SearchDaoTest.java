@@ -1,26 +1,17 @@
 package cn.e3mall.search;
 
 import org.apache.solr.client.solrj.SolrQuery;
-import org.aspectj.lang.annotation.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import cn.e3mall.common.pojo.SearchItem;
 import cn.e3mall.common.pojo.SearchResult;
+import cn.e3mall.search.dao.SearchDao;
 
 public class SearchDaoTest {
-	@org.junit.Before
-	public void before(){
-	
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
-	}
-
 	@Autowired
 	private SearchDao searchDao;
 
-	@Test
 	public void testSearchDao() throws Exception {
 		SolrQuery query = new SolrQuery();
 		query.set("手机");

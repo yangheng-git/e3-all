@@ -11,7 +11,7 @@
 
 	
 	<!-- 配置包扫描器 -->
-	<context:component-scan base-package="cn.e3mall.search.service" />
+	<context:component-scan base-package="cn.e3mall.search" />
 
 
 	<!-- 使用dubbo发布服务 -->
@@ -22,7 +22,10 @@
 	<!-- 用dubbo协议在20881端口暴露服务    20882被e3-content给用了。换一个端口。-->
 	<dubbo:protocol name="dubbo" port="20883" />
 	<!-- 声明需要暴露的服务接口 -->
+	<!--商品搜索-->
 	<dubbo:service interface="cn.e3mall.search.service.SearchItemService" ref="searchItemServiceImpl" timeout="600000"/>
+	<!--商品搜索  -->
+	<dubbo:service interface="cn.e3mall.search.service.SearchService" ref="searchServiceImpl" timeout="600000"/>
 	
 	<!--itemServiceImpl  实现类没有指定名字，默认是类名首字母小写，通过注解注入到容器中  -->
 </beans>

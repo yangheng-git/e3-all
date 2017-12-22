@@ -1,4 +1,4 @@
-package cn.e3mall.search;
+package cn.e3mall.search.dao;
 
 import java.util.ArrayList;
 import java.util.List;
