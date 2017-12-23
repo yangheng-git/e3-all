@@ -53,10 +53,10 @@ public class SearchDao {
 			SearchItem searchItem = new SearchItem();
 
 			searchItem.setId((String) solrDocument.get("id"));
-			searchItem.setId((String) solrDocument.get("item_sell_point"));
-			searchItem.setId((String) solrDocument.get("item_price"));
-			searchItem.setId((String) solrDocument.get("item_image"));
-			searchItem.setId((String) solrDocument.get("item_category_name"));
+			searchItem.setSell_point((String) solrDocument.get("item_sell_point"));
+			searchItem.setPrice((long) solrDocument.get("item_price"));
+			searchItem.setImage((String) solrDocument.get("item_image"));
+			searchItem.setCategory_name((String) solrDocument.get("item_category_name"));
 			// 取高亮
 			List<String> list = highlighting.get(solrDocument.get("id")).get("item_title");
 			String title = "";

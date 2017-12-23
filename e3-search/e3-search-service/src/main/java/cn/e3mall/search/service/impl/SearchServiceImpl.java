@@ -22,7 +22,7 @@ public class SearchServiceImpl implements SearchService {
 		// 创建SolrQuery对象。
 		SolrQuery solrQuery = new SolrQuery();
 		// 设置查询条件。
-		solrQuery.set(keyword);
+		solrQuery.setQuery(keyword);
 		// 设置分页条件。
 		if (page <= 0) {
 			page = 1;
@@ -37,6 +37,7 @@ public class SearchServiceImpl implements SearchService {
 		solrQuery.setHighlight(true);
 		solrQuery.addHighlightField("item_title");
 		solrQuery.setHighlightSimplePre("<em style=\"color:red\">");
+		
 		solrQuery.setHighlightSimplePost("</em>");
 		
 		//执行查询
