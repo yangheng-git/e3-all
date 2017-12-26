@@ -1,13 +1,21 @@
 package cn.e3mall.search;
 
+import javax.lang.model.SourceVersion;
+
 import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.CloudSolrServer;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
+import org.aspectj.lang.annotation.After;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 
 public class TestCloudSolr {
 
@@ -72,6 +80,30 @@ public class TestCloudSolr {
 			System.out.println(solrDocument.get("item_image"));
 
 		}
+	}
+	/**加载spring容器*/
+	@org.junit.After
+	public void After(){
+		String xmlfile = "classpath:spring/applicationContext-*.xml";
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlfile);
+	}
+	
+	@Autowired
+	private SolrServer solrServer;
+	@Test
+	public void testBeanSolrCloud() throws Exception{
+		SolrQuery solrQuery = new SolrQuery();
+		solrQuery.setQuery("*:*");
+		
+		QueryResponse queryResponse = solrServer.query(solrQuery);
+		SolrDocumentList solrDocumentList = queryResponse.getResults();
+		System.out.println("总记录数----"+solrDocumentList.getNumFound());
+		for (SolrDocument solrDocument : solrDocumentList) {
+			System.out.println(solrDocument.get("id"));
+			System.out.println(solrDocument.get("item_title"));
+			System.out.println(solrDocument.get("item_image"));
+		}
+		
 	}
 	
 }
