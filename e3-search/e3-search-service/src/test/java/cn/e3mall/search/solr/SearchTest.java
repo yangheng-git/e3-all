@@ -1,4 +1,4 @@
-package cn.e3mall.search;
+package cn.e3mall.search.solr;
 
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;

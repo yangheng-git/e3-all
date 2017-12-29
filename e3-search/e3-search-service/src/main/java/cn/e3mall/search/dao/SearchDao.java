@@ -23,54 +23,53 @@ import cn.e3mall.common.pojo.SearchResult;
  */
 @Repository
 public class SearchDao {
-	@Autowired
-	private SolrServer solrServer;
+    @Autowired
+    private SolrServer solrServer;
 
-	/**
-	 * 根据查询条件查询索引库
-	 * 
-	 * @throws Exception
-	 * 
-	 */
-	public SearchResult search(SolrQuery query) throws Exception {
-		
-		
-		/*
-		 * 根据query查询索引库。 取查询结果 取查询总记录数 取商品列表，取高亮 返回结果。
-		 */
-		QueryResponse queryResponse = solrServer.query(query);
-		SolrDocumentList solrDocumentList = queryResponse.getResults();
+    /**
+     * 根据查询条件查询索引库
+     * 
+     * @throws Exception
+     * 
+     */
+    public SearchResult search(SolrQuery query) throws Exception {
 
-		SearchResult searchResult = new SearchResult();
+        /*
+         * 根据query查询索引库。 取查询结果 取查询总记录数 取商品列表，取高亮 返回结果。
+         */
+        QueryResponse queryResponse = solrServer.query(query);
+        SolrDocumentList solrDocumentList = queryResponse.getResults();
 
-		long numFound = solrDocumentList.getNumFound();
-		searchResult.setRecordCount(numFound);
+        SearchResult searchResult = new SearchResult();
 
-		// 商品列表集合 。需要取高亮显示
-		List<SearchItem> itemList = new ArrayList<>();
-		Map<String, Map<String, List<String>>> highlighting = queryResponse.getHighlighting();
-		for (SolrDocument solrDocument : solrDocumentList) {
-			SearchItem searchItem = new SearchItem();
+        long numFound = solrDocumentList.getNumFound();
+        searchResult.setRecordCount(numFound);
 
-			searchItem.setId((String) solrDocument.get("id"));
-			searchItem.setSell_point((String) solrDocument.get("item_sell_point"));
-			searchItem.setPrice((long) solrDocument.get("item_price"));
-			searchItem.setImage((String) solrDocument.get("item_image"));
-			searchItem.setCategory_name((String) solrDocument.get("item_category_name"));
-			// 取高亮
-			List<String> list = highlighting.get(solrDocument.get("id")).get("item_title");
-			String title = "";
-			if (list != null && list.size() > 0) {
-				title = list.get(0);
-			}else{
-				title = (String) solrDocument.get("item_title");
-			}
-			searchItem.setId(title);
+        // 商品列表集合 。需要取高亮显示
+        List<SearchItem> itemList = new ArrayList<>();
+        Map<String, Map<String, List<String>>> highlighting = queryResponse.getHighlighting();
+        for (SolrDocument solrDocument : solrDocumentList) {
+            SearchItem searchItem = new SearchItem();
 
-			itemList.add(searchItem);
-		}
+            searchItem.setId((String) solrDocument.get("id"));
+            searchItem.setSell_point((String) solrDocument.get("item_sell_point"));
+            searchItem.setPrice((long) solrDocument.get("item_price"));
+            searchItem.setImage((String) solrDocument.get("item_image"));
+            searchItem.setCategory_name((String) solrDocument.get("item_category_name"));
+            // 取高亮
+            List<String> list = highlighting.get(solrDocument.get("id")).get("item_title");
+            String title = "";
+            if (list != null && list.size() > 0) {
+                title = list.get(0);
+            } else {
+                title = (String) solrDocument.get("item_title");
+            }
+            searchItem.setId(title);
 
-		searchResult.setItemList(itemList);
-		return searchResult;
-	}
+            itemList.add(searchItem);
+        }
+
+        searchResult.setItemList(itemList);
+        return searchResult;
+    }
 }

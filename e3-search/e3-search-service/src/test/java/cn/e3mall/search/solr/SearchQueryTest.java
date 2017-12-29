@@ -1,4 +1,4 @@
-package cn.e3mall.search;
+package cn.e3mall.search.solr;
 
 import java.util.List;
 import java.util.Map;
