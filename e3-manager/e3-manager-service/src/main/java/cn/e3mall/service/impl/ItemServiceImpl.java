@@ -34,16 +34,11 @@ import cn.e3mall.pojo.TbItemExample;
 import cn.e3mall.service.ItemService;
 
 /**
- * 商品管理Service
- * <p>
- * Title: ItemServiceImpl
- * </p>
- * <p>
+ * 商品管理Service Title: ItemServiceImpl
+ * 
  * Description:
- * </p>
- * <p>
+ * 
  * Company: www.itcast.cn
- * </p>
  * 
  * @version 1.0
  */
@@ -135,18 +130,18 @@ public class ItemServiceImpl implements ItemService {
         item.setUpdated(new Date());
         // 向商品描述表插入数据
         itemdescMapping.insert(itemDesc);
-        
-        //向activeMQ发送消息
+
+        // 向activeMQ发送消息
         jmsTemplate.send(topicDestination, new MessageCreator() {
-            
+
             @Override
             public Message createMessage(Session session) throws JMSException {
-               
-                TextMessage textMessage = session.createTextMessage(itemID+"");
+
+                TextMessage textMessage = session.createTextMessage(itemID + "");
                 return textMessage;
             }
         });
-        
+
         return E3Result.ok();
     }
 
@@ -224,6 +219,12 @@ public class ItemServiceImpl implements ItemService {
         Params par = new Params();
         par.setStatus(itemMapper.batchDel(ids) > 0 ? "200" : null);
         return par;
+    }
+
+    @Override
+    public TbItemDesc selectItemDespById(Long itemId) {
+        TbItemDesc itemDesc = itemdescMapping.selectByPrimaryKey(itemId);
+        return itemDesc;
     }
 
 }
