@@ -18,7 +18,7 @@
 			<artifactId>e3-manager-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		
+
 		<!-- JSP相关 -->
 		<dependency>
 			<groupId>jstl</groupId>
@@ -33,6 +33,12 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jsp-api</artifactId>
 			<scope>provided</scope>
+		</dependency>
+        
+        <!--Freemarker  -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
 		</dependency>
 
 		<!-- spring的依赖 -->
