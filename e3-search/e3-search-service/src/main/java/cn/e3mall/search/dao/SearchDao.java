@@ -64,7 +64,7 @@ public class SearchDao {
             } else {
                 title = (String) solrDocument.get("item_title");
             }
-            searchItem.setId(title);
+            searchItem.setTitle(title);
 
             itemList.add(searchItem);
         }

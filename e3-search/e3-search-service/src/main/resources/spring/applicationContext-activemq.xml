@@ -32,9 +32,9 @@
 		<constructor-arg value="itemAddTopic" />
 	</bean>
 
-	<bean id="myMessageListener" class="cn.e3mall.search.message.MyMessageListener"/>
-	
-	
+	<bean id="myMessageListener" class="cn.e3mall.search.message.MyMessageListener" />
+
+
 	<!-- 消息监听容器 -->
 	<bean
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
@@ -43,6 +43,17 @@
 		<property name="messageListener" ref="myMessageListener" />
 	</bean>
 
+
+	<!--商品添加监听 -->
+	<bean id="itemAaddMessageListener" class="cn.e3mall.search.message.ItemAaddMessageListener"></bean>
+
+	<!--注意点。 topicDestination是自己定义的 itemAddTipic 拦截器的实现类要选择ItemAddMessageListener -->
+	<bean
+		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="destination" ref="topicDestination" />
+		<property name="messageListener" ref="itemAaddMessageListener" />
+	</bean>
 
 
 </beans>
