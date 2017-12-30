@@ -12,9 +12,9 @@
 	<!--依賴注入 -->
 
 	<dependencies>
-	
-		
-	
+
+
+
 		<dependency>
 			<groupId>cn.e3mall</groupId>
 			<artifactId>e3-manager-dao</artifactId>
@@ -25,14 +25,19 @@
 			<artifactId>e3-manager-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		
-		<!--ActiveMQ  -->
+
+		<!--ActiveMQ -->
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-all</artifactId>
 		</dependency>
-		
-		
+        
+        <!--solr客户端  -->
+		<dependency>
+			<groupId>org.apache.solr</groupId>
+			<artifactId>solr-solrj</artifactId>
+		</dependency>
+
 		<!-- spring的依赖 -->
 		<!-- Spring -->
 		<dependency>
@@ -88,7 +93,7 @@
 			<artifactId>zkclient</artifactId>
 		</dependency>
 
-		
+
 
 	</dependencies>
 
