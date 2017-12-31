@@ -94,3 +94,5 @@ buildNumber.properties
 .metadata
 logs
 
+http___download_eclipse_org_recommenders_models_neon_
+caches
