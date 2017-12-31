@@ -11,7 +11,7 @@ import org.junit.Test;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
-public class FreemarkerTest {
+public class FreemarkerTest1 {
 
     @Test
     public void TestFreemarker() throws Exception {
