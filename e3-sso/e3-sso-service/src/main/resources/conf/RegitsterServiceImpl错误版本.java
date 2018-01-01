@@ -1,4 +1,4 @@
-package cn.e3mall.sso.serviice.impl;
+package cn.e3mall.sso.service.impl;
 
 import java.util.Date;
 import java.util.List;
@@ -13,7 +13,7 @@ import cn.e3mall.mapper.TbUserMapper;
 import cn.e3mall.pojo.TbUser;
 import cn.e3mall.pojo.TbUserExample;
 import cn.e3mall.pojo.TbUserExample.Criteria;
-import cn.e3mall.sso.service.RegitsterService;
+import cn.e3mall.sso.service.RegisterService;
 
 /**
  * @author yangheng 用户注册Service
@@ -23,7 +23,7 @@ import cn.e3mall.sso.service.RegitsterService;
  *
  */
 @Service
-public class RegitsterServiceImpl implements RegitsterService {
+public class RegitsterServiceImpl错误版本 /*implements RegisterService */{
 
     @Autowired
     private TbUserMapper userMapper;
@@ -34,9 +34,9 @@ public class RegitsterServiceImpl implements RegitsterService {
      * @author yangheng
      *
      */
-    @Override
+    
     public E3Result checkdata(String param, Integer type) {
-        // 判断param的类型。 type=1 ：用户名 2：手机号 3：邮箱 。然后进行判断。
+        // 判断param的类型。 type=1 ：用户名 2：手机号 3：邮箱 。然后进行判断。 是否填写
         TbUserExample userExample = new TbUserExample();
         Criteria criteria = userExample.createCriteria();
         if (type == 1) {
@@ -62,9 +62,9 @@ public class RegitsterServiceImpl implements RegitsterService {
     /**
      * (non-Javadoc) 注册Service
      * 
-     * @see cn.e3mall.sso.service.RegitsterService#regitster(cn.e3mall.pojo.TbUser)
+     * @see cn.e3mall.sso.service.RegisterService#regitster(cn.e3mall.pojo.TbUser)
      */
-    @Override
+    
     public E3Result regitster(TbUser user) {
         // 注册前，判断数据的完整性。 和再次确认有没有被占用
         if (StringUtils.isBlank(user.getUsername()) || StringUtils.isBlank(user.getPassword())
