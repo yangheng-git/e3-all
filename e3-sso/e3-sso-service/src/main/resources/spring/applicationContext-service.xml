@@ -23,7 +23,8 @@
 	<dubbo:service interface="cn.e3mall.sso.service.RegisterService"
 		ref="registerServiceImpl" timeout="600000" />
 
-
+	<dubbo:service interface="cn.e3mall.sso.service.LoginService"
+		ref="loginServiceImpl" timeout="600000" />
 	<!--itemServiceImpl 实现类没有指定名字，默认是类名首字母小写，通过注解注入到容器中 -->
 
 
