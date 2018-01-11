@@ -42,7 +42,6 @@ public class CartController {
      * @return
      */
     @RequestMapping("/cart/add/{itemId}")
-    @ResponseBody
     public String addCart(@PathVariable Long itemId, @RequestParam(defaultValue = "1") Integer num,
             HttpServletRequest request, HttpServletResponse response) {
         // 从cookie中取商品列表、
@@ -52,9 +51,9 @@ public class CartController {
         // 判断商品在商品列表中是否存在。
         for (TbItem tbItem : cartlist) {
 
+            // 如果存在，数量相加。
             if (itemId == tbItem.getId().longValue()) {
                 flag = true;
-                // 如果存在，数量相加。
                 // 知识点 封装数据类型是对象。 对象用==比较，比较的是地址。 需要将封装数据类型转换为基本数据类型，才能用==比较。
                 tbItem.setNum(tbItem.getNum() + num);
                 break;
@@ -62,11 +61,19 @@ public class CartController {
         }
         // 如果不存在。
         if(!flag){
-            // 把商品添加到商品列表。
+            // 根据商品id查询商品信息，得到一个tbItem对象。
             TbItem item = itemService.selectByID(itemId);
+            //设置商品数量
+            item.setNum(num);
+            //取一张图片
+            String image= item.getImage();
+            if(StringUtils.isNotBlank(image)){
+                item.setImage(image.split(",")[0]);
+            }
+            //添加商品到商品列表。
             cartlist.add(item);
         }
-        // 写入Cookie
+        //将商品列表写入Cookie
         CookieUtils.setCookie(request, response, "cart", JsonUtils.objectToJson(cartlist), COOKIE_CART_EXPIRE, true);
         
         //返回成功页面。

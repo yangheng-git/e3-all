@@ -33,8 +33,8 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e3-cart-web" />
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181" />
-<!-- 	<dubbo:reference interface="cn.e3mall.service.ItemService" id="itemServiceImpl" />
- -->
+	<dubbo:reference interface="cn.e3mall.service.ItemService" id="itemServiceImpl" />
+
 	<!-- 配置资源映射 设置伪静态，拦截.html 所以资源映射就失效了 -->
 	<!-- <mvc:resources location="/css/" mapping="/css/**" /> <mvc:resources 
 		location="/js/" mapping="/js/**" /> -->

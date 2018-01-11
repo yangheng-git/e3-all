@@ -20,7 +20,7 @@
 	<!-- 在ip后面加上一个端口号 ，自己设置，不要重复 -->
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"></dubbo:registry>
 	<!-- 用dubbo协议在20881端口暴露服务 20881被e3-manager给用了。换一个端口。 -->
-	<dubbo:protocol name="dubbo" port="20881" />
+	<dubbo:protocol name="dubbo" port="20886" />
 	<!-- 声明需要暴露的服务接口 -->
 	<!-- <dubbo:service interface="cn.e3mall.content.service.ContentService" 
 		ref="contentServiceImpl" timeout="600000" /> -->
