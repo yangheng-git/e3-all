@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.e3mall.common.utils.CookieUtils;
+import cn.e3mall.common.utils.E3Result;
 import cn.e3mall.common.utils.JsonUtils;
 import cn.e3mall.pojo.TbItem;
 import cn.e3mall.service.ItemService;
@@ -28,12 +29,12 @@ import cn.e3mall.service.ItemService;
  */
 @Controller
 public class CartController {
-        
-        @Autowired
-        private ItemService itemService;
-        @Value("${COOKIE_CART_EXPIRE}")
-        private Integer COOKIE_CART_EXPIRE;
-    
+
+    @Autowired
+    private ItemService itemService;
+    @Value("${COOKIE_CART_EXPIRE}")
+    private Integer COOKIE_CART_EXPIRE;
+
     /**
      * 添加商品到购物车，购物车放到cookie
      * 
@@ -60,23 +61,23 @@ public class CartController {
             }
         }
         // 如果不存在。
-        if(!flag){
+        if (!flag) {
             // 根据商品id查询商品信息，得到一个tbItem对象。
             TbItem item = itemService.selectByID(itemId);
-            //设置商品数量
+            // 设置商品数量
             item.setNum(num);
-            //取一张图片
-            String image= item.getImage();
-            if(StringUtils.isNotBlank(image)){
+            // 取一张图片
+            String image = item.getImage();
+            if (StringUtils.isNotBlank(image)) {
                 item.setImage(image.split(",")[0]);
             }
-            //添加商品到商品列表。
+            // 添加商品到商品列表。
             cartlist.add(item);
         }
-        //将商品列表写入Cookie
+        // 将商品列表写入Cookie
         CookieUtils.setCookie(request, response, "cart", JsonUtils.objectToJson(cartlist), COOKIE_CART_EXPIRE, true);
-        
-        //返回成功页面。
+
+        // 返回成功页面。
         return "cartSuccess";
 
     }
@@ -98,4 +99,64 @@ public class CartController {
         List<TbItem> list = JsonUtils.jsonToList(json, TbItem.class);
         return list;
     }
+
+    /**
+     * 展示购物车列表 展示购物车页面,需要将购物车列表展示出来
+     */
+    @RequestMapping("/cart/cart")
+    public String showCartList(HttpServletRequest request, HttpServletResponse response) {
+        // 从cookie中取购物车列表
+        List<TbItem> cartList = getCartListFromCookie(request);
+        // 把列表传递给页面
+        request.setAttribute("cartList", cartList);
+        // 返回逻辑视图
+        return "cart";
+    }
+
+    /**
+     * 更新购物车商品的数量 springmvc的坑
+     * 在springmvc中认为。如果你请求地址为*.html，那么你必须返回一个html页面，不然会出现406错误。 为了避免这种错误， 添加拦截地址
+     * *.action.
+     * 
+     */
+    @RequestMapping("/cart/update/num/{itemId}/{num}")
+    @ResponseBody
+    public E3Result updateCartItemNum(@PathVariable Long itemId, @PathVariable Integer num, HttpServletRequest request,
+            HttpServletResponse response) {
+        // 从cookie中取出商品列表,更改商品数量
+        List<TbItem> cartList = getCartListFromCookie(request);
+        for (TbItem tbItem : cartList) {
+            if (tbItem.getId().longValue() == itemId) {
+                tbItem.setNum(num);
+                break;
+            }
+
+        }
+        // 将更改后的商品列表重新返回cookie
+        CookieUtils.setCookie(request, response, "cart", JsonUtils.objectToJson(cartList), COOKIE_CART_EXPIRE, true);
+        return E3Result.ok();
+    }
+
+    /**
+     * 删除商品 删除商品后，应该刷新购物车的展示页面
+     */
+    @RequestMapping("/cart/delete/{itemId}")
+    public String deleteCartByItemId(@PathVariable Long itemId, HttpServletRequest request,
+            HttpServletResponse response) {
+        // 从cookie中取出商品列表
+        List<TbItem> cartList = getCartListFromCookie(request);
+        // 循环中判断，如果商品列表中存在这个商品。删除
+        for (TbItem tbItem : cartList) {
+            if (tbItem.getId().longValue() == itemId) {
+                // 注意： 在循环中删除一个元素后，需要停止循环，不然进行下次循环时会报错。
+                cartList.remove(tbItem);
+                break;
+            }
+        }
+
+        // 将更改后的商品列表重新返回cookie
+        CookieUtils.setCookie(request, response, "cart", JsonUtils.objectToJson(cartList), COOKIE_CART_EXPIRE, true);
+        return "redirect:/cart/cart.html";
+    }
+
 }
