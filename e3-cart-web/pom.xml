@@ -23,6 +23,12 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
+		<dependency>
+			<groupId>cn.e3mall</groupId>
+			<artifactId>e3-sso-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!--ActiveMQ -->
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
