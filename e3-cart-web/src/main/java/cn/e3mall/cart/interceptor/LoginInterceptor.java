@@ -19,7 +19,7 @@ import cn.e3mall.sso.service.TokenService;
  * @author yangheng
  *
  */
-public class LoginInterception implements HandlerInterceptor {
+public class LoginInterceptor implements HandlerInterceptor {
 
     @Autowired
     private TokenService tokenService;

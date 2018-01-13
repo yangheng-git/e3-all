@@ -15,10 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import cn.e3mall.cart.service.CartService;
 import cn.e3mall.common.utils.CookieUtils;
 import cn.e3mall.common.utils.E3Result;
 import cn.e3mall.common.utils.JsonUtils;
 import cn.e3mall.pojo.TbItem;
+import cn.e3mall.pojo.TbUser;
 import cn.e3mall.service.ItemService;
 
 /**
@@ -29,6 +31,8 @@ import cn.e3mall.service.ItemService;
  */
 @Controller
 public class CartController {
+    @Autowired
+    private CartService cartService;
 
     @Autowired
     private ItemService itemService;
@@ -45,6 +49,15 @@ public class CartController {
     @RequestMapping("/cart/add/{itemId}")
     public String addCart(@PathVariable Long itemId, @RequestParam(defaultValue = "1") Integer num,
             HttpServletRequest request, HttpServletResponse response) {
+        // 判断用户是否登录。 如果已经登录，将购物车放入redis中、
+        TbUser user = (TbUser) request.getAttribute("user");
+        if (user != null) {
+            // 用户已登录，将购物车内容放入redis. 然后返回逻辑视图
+            cartService.addCart(user.getId(), itemId, num);
+
+            return "cartSuccess";
+        }
+
         // 从cookie中取商品列表、
         List<TbItem> cartlist = getCartListFromCookie(request);
         // 立个flag，判断商品列表中是否存在要添加的商品。
@@ -83,7 +96,7 @@ public class CartController {
     }
 
     /**
-     * 抽取方法，从cookie中获取购物车列表。 从request中获取商品列表。是json，
+     * 获取购物车列表、从kookie中 抽取方法，从cookie中获取购物车列表。 从request中获取商品列表。是json，
      * 如果列表中没东西就返回一个空集合，如果有东西就转化为集合返回。
      * 
      * @param request
@@ -102,11 +115,32 @@ public class CartController {
 
     /**
      * 展示购物车列表 展示购物车页面,需要将购物车列表展示出来
+     * <p>
+     * 登录的情况：从服务（redis）中取购物车列表。
+     * <p>
+     * 未登录的情况：从cookie中取购物车列表。
+     * <p>
+     * 需要将cookie中购物车列表信息与服务端购物车列表信息进行和合并、
+     * 
+     * 
      */
     @RequestMapping("/cart/cart")
     public String showCartList(HttpServletRequest request, HttpServletResponse response) {
         // 从cookie中取购物车列表
         List<TbItem> cartList = getCartListFromCookie(request);
+
+        // 判断用户是否登录
+        TbUser user = (TbUser) request.getAttribute("user");
+        // 登录的话，从服务端取购物车列表。
+        if (user != null) {
+            // 需要将cookie中购物车列表信息与服务端购物车列表信息进行和合并、
+            cartService.mageCart(user.getId(), cartList);
+            // 合并后，将cookie中的购物车删除。
+            CookieUtils.deleteCookie(request, response, "cart");
+            // 从服务端取购物车列表。取合并后的购物车列表
+            cartList = cartService.getCartList(user.getId());
+        }
+
         // 把列表传递给页面
         request.setAttribute("cartList", cartList);
         // 返回逻辑视图
@@ -114,15 +148,23 @@ public class CartController {
     }
 
     /**
-     * 更新购物车商品的数量 springmvc的坑
-     * 在springmvc中认为。如果你请求地址为*.html，那么你必须返回一个html页面，不然会出现406错误。 为了避免这种错误， 添加拦截地址
-     * *.action.
+     * 更新购物车商品的数量
+     * 
+     * springmvc的坑： 在springmvc中认为。如果你请求地址为*.html，那么你必须返回一个html页面，不然会出现406错误。
+     * 为了避免这种错误， 添加拦截地址 *.action.
      * 
      */
     @RequestMapping("/cart/update/num/{itemId}/{num}")
     @ResponseBody
     public E3Result updateCartItemNum(@PathVariable Long itemId, @PathVariable Integer num, HttpServletRequest request,
             HttpServletResponse response) {
+        // 判断用户有没有登录。登陆的话，更新服务端的购物车列表中的数量。
+        TbUser user = (TbUser) request.getAttribute("user");
+        if(user != null){
+            cartService.updataCartItemNum(user.getId(),itemId,num);
+            return E3Result.ok();
+        }
+
         // 从cookie中取出商品列表,更改商品数量
         List<TbItem> cartList = getCartListFromCookie(request);
         for (TbItem tbItem : cartList) {
@@ -143,6 +185,14 @@ public class CartController {
     @RequestMapping("/cart/delete/{itemId}")
     public String deleteCartByItemId(@PathVariable Long itemId, HttpServletRequest request,
             HttpServletResponse response) {
+        //判断用户是否登录
+        TbUser user = (TbUser) request.getAttribute("user");
+        if(user != null){
+            cartService.deleteCartItem(user.getId(),itemId);
+            return "redirect:/cart/cart.html";
+        }
+        
+        
         // 从cookie中取出商品列表
         List<TbItem> cartList = getCartListFromCookie(request);
         // 循环中判断，如果商品列表中存在这个商品。删除

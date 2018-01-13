@@ -22,7 +22,7 @@ public class SearchController {
     @Value("${SEARCH_RESULT_ROWS}")
     private Integer rows;
 
-    @RequestMapping("search")
+    @RequestMapping("/search")
     public String search(String keyword, @RequestParam(defaultValue = "1") Integer page, Model model) throws Exception {
         keyword = new String(keyword.getBytes("iso-8859-1"), "utf-8");
         // 查询商品列表
