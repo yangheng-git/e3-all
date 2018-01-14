@@ -138,4 +138,14 @@ public class CartServiceImpl implements CartService {
         return E3Result.ok();
     }
 
+    /* (non-Javadoc)
+     * @see cn.e3mall.cart.service.CartService#clearCartItem(java.lang.Long)
+     * 清空购物车
+     */
+    @Override
+    public E3Result clearCartItem(Long userId) {
+            jedisClient.del(REDIS_CART_PRE+":"+userId);
+        return null;
+    }
+
 }
